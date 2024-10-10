@@ -54,20 +54,29 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: "" + b64data });
+               let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: "Empire_Md" + b64data });
 
                let SIGMA_MD_TEXT = `
 ┏━━━━━━━━━━━━━━
-┃QUEEN_ANITA_V2 SESSION IS 
-┃SUCCESSFULLY
-┃CONNECTED ✅🔥
-┗━━━━━━━━━━━━━━━
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡ DAVID CYRIL ⚡𖥘
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VaeRru3ADTOEKPCPom0L 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©*2024-2099 David Cyril*`
+*_Session Connected With Empire_Md*
+*_Made With 🤍_*
+______________________________________
+╔════◇
+║ *『YOU'VE CHOSEEN Empire_Md 』*
+║ _You Have Completed the First Step to Deploy Empire_Md._
+╚════════════════════════╝
+╔═════◇
+║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
+║❒ *Ytube:* _youtube.com/@only_one_empire
+║❒ *Owner:* _https://wa.me/2348078582617_
+║❒ *Repo:* _https://github.com/efeurhobo/Empire_Md_
+║❒ *WaGroup:* _https://chat.whatsapp.com/DLrFOwuOnLwDS5VLeCuxHe_
+║❒ *WaChannel:* _https://whatsapp.com/channel/0029VajVvpQIyPtUbYt3Oz0k_
+║❒ *Creator:* _𝐎𝐧𝐥𝐲_𝐨𝐧𝐞_🥇𝐄𝐦𝐩𝐢𝐫𝐞_ 
+╚════════════════════════╝
+_____________________________________
+	
+_Don't Forget To Give Star To My Repo_`
  await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
  
 
